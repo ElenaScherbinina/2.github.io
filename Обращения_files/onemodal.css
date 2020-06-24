@@ -1,0 +1,128 @@
+.onemodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+  z-index: 9999;
+  overflow: auto;
+}
+.onemodal--active {
+  visibility: visible;
+}
+.onemodal--active .onemodal__overlay {
+  background: rgba(0, 0, 0, 0.6);
+}
+.onemodal--active .onemodal__inner {
+  transform: rotateX(0deg);
+}
+.onemodal__table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.onemodal__row {
+  display: table-row;
+  height: 100%;
+}
+.onemodal__cell {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  padding: 15px;
+  overflow: hidden;
+}
+.onemodal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.333s ease;
+  backface-visibility: hidden;
+}
+.onemodal__inner {
+  background: #fff;
+  display: inline-block;
+  max-width: 768px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  transition: all 0.333s ease;
+  transform: rotateX(90deg);
+  backface-visibility: hidden;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 20px;
+}
+.onemodal__inner--to-left {
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.onemodal__inner--to-center {
+  transform: translateX(none);
+  transition: all 0.5s ease;
+}
+.onemodal__inner--to-right {
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.onemodal__inner--no-ease {
+  transition: all 0s ease;
+  visibility: hidden;
+}
+.onemodal__head {
+  margin-bottom: 12px;
+}
+.onemodal__title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.onemodal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.onemodal__close:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  margin-top: -6px;
+  background: #b7b7b7;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+.onemodal__close:hover {
+  background: #eaeaea;
+}
+.onemodal__close:hover:before {
+  background: red;
+}
+.onemodal__body {
+  line-height: 1.4em;
+}
+
+@media screen and (max-width: 768px) {
+  .onemodal__cell {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,162 @@
+.vcomments__item {
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+.vcomments__item:first-child {
+  margin-top: 0;
+}
+.vcomments__author {
+  font-weight: bold;
+}
+.vcomments__time {
+  color: #999;
+  font-size: 14px;
+  margin-left: 4px;
+  font-style: italic;
+}
+.vcomments__quote {
+  margin: 8px 0;
+  padding: 0;
+  border: none;
+}
+.vcomments__btns {
+  background: #eee;
+  padding: 6px 10px;
+  border-radius: 4px;
+  user-select: none;
+}
+.vcomments__btns:before, .vcomments__btns:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.vcomments__bleft {
+  float: left;
+}
+.vcomments__bright {
+  float: right;
+}
+.vcomments__btn {
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  padding: 2px 0;
+}
+.vcomments__btn--delete {
+  color: red;
+}
+.vcomments__btn--edit {
+  color: orange;
+}
+.vcomments__btn--reply {
+  color: green;
+}
+.vcomments__btn--toggle {
+  color: blue;
+}
+.vcomments__btn:after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  right: 50%;
+  background: currentColor;
+  height: 1px;
+  transition: all 0.2s ease-in;
+}
+.vcomments__btn:hover:after {
+  left: 0;
+  right: 0;
+}
+.vcomments__group {
+  margin-top: 15px;
+  padding-left: 30px;
+}
+.vcomments__add-block {
+  margin-top: 15px;
+  position: relative;
+}
+.vcomments__add-block:first-child {
+    margin-top: 0;
+}
+.vcomments__add-input {
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: 1px solid #eee;
+  padding: 10px 110px 10px 15px;
+  border-radius: 40px;
+  transition: all 0.2s ease-out;
+}
+.vcomments__add-input:focus {
+  border-color: #79cff3;
+}
+.vcomments__add-input:focus + .vcomments__add-button {
+  background: #79cff3;
+  color: white;
+  transition: all 0.2 ease-in;
+}
+.vcomments__add-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #eee;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+  user-select: none;
+  padding: 11px 20px;
+  border-radius: 40px;
+}
+.vcomments__add-button:hover {
+  background: #3192c1 !important;
+  color: white;
+}
+
+.bottom-container {
+    padding: 10px;
+}
+.bottom-container__body {
+    padding: 15px;
+}
+.bottom-container__body--lborder {
+    border-left: 1px solid #ddd;
+}
+
+.true-grid__table {
+  display: table;
+  border-collapse: collapse;
+}
+.true-grid__row {
+  display: table-row;
+}
+.true-grid__cell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 12px;
+  border: 1px solid #dedede;
+}
+.true-grid__audio {
+    display: block;
+}
+.true-grid__link {
+    color: red;
+    cursor: pointer;
+    user-select: none;
+}
+.true-grid__load-btn {
+    margin-top: 10px;
+}
+.true-grid__load-btn:first-child {
+    margin-top: 0;
+}
+
+.statuses__mtop {
+    margin-top: 10px;
+}
+.statuses__mright {
+    margin-right: 10px;
+}

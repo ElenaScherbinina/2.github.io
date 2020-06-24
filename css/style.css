@@ -1,0 +1,44 @@
+.footer-paragraph-transfer{
+  display: none;
+}
+@media(max-width:746px){
+.box-header{
+  display: flex;
+  flex-direction: column;
+ flex-wrap: wrap;
+}
+.pull-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.btn-mobil{
+  flex-basis: 48%;
+  border:1px solid #fff;
+}
+.btn-reset{
+  text-align: center;
+}
+.btn,.date-range,.inline-popover{
+ display: block;
+ width: 100%;
+ height: 30px;
+}
+.date-range{
+  margin-top: 20px;
+  border-radius:2px;
+}
+.inline-popover{
+  margin-bottom: 20px;
+}
+.great-filter{
+  margin-top: 20px;
+}
+.footer-paragraph{
+  font-size:80%;
+}
+.footer-paragraph-transfer{
+  display: block;
+}
+}
